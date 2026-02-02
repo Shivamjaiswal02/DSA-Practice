@@ -23,13 +23,10 @@ class Solution {
             else
             {
                map1.put(ch,map1.get(ch)-1);
-            }
-        }
-        for(Character key:map1.keySet())
-        {
-            if(map1.get(key)<0)
-            {
+               if (map1.get(ch) < 0)
+            {   
                 return false;
+            }
             }
         }
         return true;
